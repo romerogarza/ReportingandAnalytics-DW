@@ -1,25 +1,17 @@
-# How to contribute
+# Enterprise Data Warehouse
 
-Third-party patches are essential for keeping Puppet great. We simply can't
-access the huge number of platforms and myriad configurations for running
-Puppet. We want to keep it as easy as possible to contribute changes that
-get things working in your environment. There are a few guidelines that we
-need contributors to follow so that we can have a chance of keeping on
-top of things.
+## What is a Data Warehouse?
 
-## Puppet Core vs Modules
+The Reporting & Analytics Data Warehouse is a central repository of information that can be analyzed to make more informed decisions. Data flows into our data warehouse from transactional systems, relational databases, and other sources, typically on a regular cadence.
 
-New functionality is typically directed toward modules to provide a slimmer
-Puppet Core, reducing its surface area, and to allow greater freedom for
-module maintainers to ship releases at their own cadence, rather than
-being held to the cadence of Puppet releases. With Puppet 4's "all in one"
-packaging, a list of modules at specific versions will be packaged with the
-core so that popular types and providers will still be available as part of
-the "out of the box" experience.
+## How is a Data Warehouse architected?
 
-Generally, new types and new OS-specific providers for existing types should
-be added in modules. Exceptions would be things like new cross-OS providers
-and updates to existing core types.
+The Reporting & Analytics Data Warehouse architecture is made up of tiers. The top tier is the front-end KPI that presents results through reporting and analysis. The middle tier consists of the analytics engine that is used to access and analyze the data. The bottom tier of the architecture is the database server, where data is loaded and stored from our vendors.
+
+##How does a Data Warehouse work?
+
+The Data Warehouse will gather RAW data on a regular cadence from various North Kansas City Hospital vendors and load it into the Enterprise Database within our Librarian Server. This is considered the bottom tier of the architecture. Each vendor will have a dedicated schema to separate, consolidate, and organize table structure within the Enterprise Database. Once the raw data is extracted, transformation will begin and stored into views creating the various Models. These Models will be the foundation to the KPI’s needed and are considered to be the middle tier of the architecture. The final tier will focus on individual KPI’s, rolled up from each Model to display a single number or percentage to serve to leadership and stakeholders within a front-end application (PowerBi)
+
 
 If you are unsure of whether your contribution should be implemented as a
 module or part of Puppet Core, you may visit [#puppet-dev on slack](https://puppetcommunity.slack.com/), or ask on
