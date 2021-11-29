@@ -31,7 +31,7 @@ The idea is to mirror the data being captured within the vendor database and sto
 
 ### Stored Procedures
 
-Stored Procedures will have three approaches to their names, the vendor, table name and action. Stored Procedures should start with the following p_ Naming convention is as follows: `p_<vendor>_<table_name>_<action_name>`	Example: `p_cerner_encounter_insert`
+Stored Procedures will have three approaches to their names, the vendor, table name and action. Stored Procedures should start with the following `p_` Naming convention is as follows: `p_<vendor>_<table_name>_<action_name>`	Example: `p_cerner_encounter_insert`
 
 ### Tables
 
@@ -40,9 +40,3 @@ Tables will have two approaches to their names, the vendor, table name. Naming c
 ### Views
 
 Tables will have two approaches to their names, the vendor, table name. Views should start with the following v_ Naming convention is as follows: `v_<vendor>_<table_name>` Example: `p_cerner_encounter_insert`
-
-
-
-If you are unsure of whether your contribution should be implemented as a
-module or part of Puppet Core, you may visit [#puppet-dev on slack](https://puppetcommunity.slack.com/), or ask on
-the [puppet-dev mailing list](https://groups.google.com/forum/#!forum/puppet-dev) for advice.
