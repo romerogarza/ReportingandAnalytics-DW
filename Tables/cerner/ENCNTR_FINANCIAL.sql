@@ -1,0 +1,35 @@
+USE [ENTERPRISE]
+GO
+
+/****** Object:  Table [cerner].[ENCNTR_FINANCIAL]    Script Date: 11/29/2021 5:07:24 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [cerner].[ENCNTR_FINANCIAL](
+	[ENCNTR_FINANCIAL_ID] [bigint] NULL,
+	[PERSON_ID] [bigint] NULL,
+	[UPDT_CNT] [bigint] NULL,
+	[UPDT_DT_TM] [datetime2](7) NULL,
+	[UPDT_ID] [bigint] NULL,
+	[UPDT_TASK] [bigint] NULL,
+	[UPDT_APPLCTX] [bigint] NULL,
+	[ACTIVE_IND] [bigint] NULL,
+	[ACTIVE_STATUS_CD] [bigint] NULL,
+	[ACTIVE_STATUS_DT_TM] [datetime2](7) NULL,
+	[ACTIVE_STATUS_PRSNL_ID] [bigint] NULL,
+	[BEG_EFFECTIVE_DT_TM] [datetime2](7) NULL,
+	[END_EFFECTIVE_DT_TM] [datetime2](7) NULL,
+	[RESEARCH_ACCOUNT] [varchar](100) NULL,
+	[DATA_STATUS_CD] [bigint] NULL,
+	[DATA_STATUS_DT_TM] [datetime2](7) NULL,
+	[DATA_STATUS_PRSNL_ID] [bigint] NULL,
+	[CONTRIBUTOR_SYSTEM_CD] [bigint] NULL,
+	[BILL_TYPE_CD] [bigint] NULL,
+	[ENTERPRISE_UPDATE_DT_TM] [datetime2](7) NULL
+) ON [PRIMARY]
+GO
+
+
