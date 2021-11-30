@@ -22,3 +22,5 @@ Benefits of a data warehouse include the following:
 * Historical data analysis
 * Data quality, consistency, flexibility and accuracy
 * Separation of analytics processing from transactional databases, which improves performance of both systems
+
+Please contact Romero Garza or Stephen Seat with questions.
