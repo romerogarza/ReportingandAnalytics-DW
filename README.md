@@ -1,5 +1,6 @@
 # Enterprise Data Warehouse
-* See [SQL Server Jobs](https://github.com/romerogarza/ReportingandAnalytics-DW/tree/main/Stored%20Procedures) to view details around job structure.
+* See [Naming Convention](https://github.com/romerogarza/ReportingandAnalytics-DW/wiki/Enterprise-Naming-Convention) to view details around the Enterprise Naming Conventions.
+* See [SQL Server Jobs](https://github.com/romerogarza/ReportingandAnalytics-DW/wiki/SQL-Server-ENTERPRISE-Jobs) to view details around job structure.
 
 ### What is a Data Warehouse?
 
