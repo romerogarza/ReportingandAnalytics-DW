@@ -1,4 +1,5 @@
 # Enterprise Data Warehouse
+* See [SQL Server Jobs](https://github.com/romerogarza/ReportingandAnalytics-DW/tree/main/SQL%20Server%20Jobs) to view details around job structure.
 
 ### What is a Data Warehouse?
 
