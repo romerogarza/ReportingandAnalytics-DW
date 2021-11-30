@@ -21,23 +21,3 @@ Benefits of a data warehouse include the following:
 * Historical data analysis
 * Data quality, consistency, flexibility and accuracy
 * Separation of analytics processing from transactional databases, which improves performance of both systems
-
-# Enterprise Naming Convention
-
-## Schema’s
-
-Each North Kansas City Hospital Vendor will have a designated Schema. If no Schema is presented, one will be created with an owner of dbo. Naming convention is as follows: `<vendor>.<table>` Example: `cerner.table_name`
-
-The idea is to mirror the data being captured within the vendor database and store it within the Enterprise Database. This allows our data to be flexible and easily grow.
-
-### Stored Procedures
-
-Stored Procedures will have three approaches to their names, the vendor, table name and action. Stored Procedures should start with the following `p_` Naming convention is as follows: `p_<vendor>_<table_name>_<action_name>`	Example: `p_cerner_encounter_insert`
-
-### Tables
-
-Tables will have two approaches to their names, the vendor, table name. Naming convention is as follows: `<vendor>.<table>` Example: `cerner.encounter`
-
-### Views
-
-Tables will have two approaches to their names, the vendor, table name. Views should start with the following v_ Naming convention is as follows: `v_<vendor>_<table_name>` Example: `p_cerner_encounter_insert`
